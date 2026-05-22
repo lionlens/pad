@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>My Frame Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="headbar">
+
+    <div class="logo">
+        <div class="logo1">
+
+        </div>
+    </div>
+    <h2>PHOTO GALARY
+    </h2>
+
+</div>
+
+<div class="intro">
+
+<h2>PHOTO ART GALLERY</h2>
+<p>wellcome to our photo gallery
+
+</p>
+
+
+</div>
+<div class="slid">
+<div class="slider">
+  <img class="slide" src="New Project.jpg">
+  <img class="slide" src="New Project (1).jpg">
+  <img class="slide" src="New Project (2).jpg">
+</div>
+</div>
+<div id="products"></div>
+<div id="products"></div>
+
+<script src="products.js"></script>
+
+<script>
+
+let output = "";
+
+products.forEach(product => {
+
+    output += `
+
+    <div class="product-card">
+
+        <a href="product.html?id=${product.id}">
+
+            <img src="${product.image}" width="300">
+
+        </a>
+
+        <h2>${product.name}</h2>
+
+    </div>
+
+    <hr>
+
+    `;
+
+});
+
+document.getElementById("products").innerHTML = output;
+</script>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.headbar{
+background-color: #7fa87e;
+height: 36px;
+color: white;
+display: flex;  
+gap: 10px;
+justify-content: flex-start;
+align-items: center;
+}
+.logo{
+    border:#7fa87e 1px solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-left: 10px;
+    justify-content: center;
+    
+    align-items: center;
+    font-weight: bold;
+    justify-items: center;
+    font-size: 20px;    
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 50px;
+}
+
+.slid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 50px;
+}
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+    display: flex;
+   justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.products{
+  background-color: #a31f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.product-card{
+    background: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.product-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-container{
+    gap: 50px;
+    padding: 50px;
+    background: white;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+
+.product-image img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.product-details{
+    flex: 1;
+}
+
+.product-details h1{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.product-details h2{
+    color: #B12704;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.desc{
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.stock{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-details p{
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+.product-details button{
+    margin-top: 25px;
+    background: #FFD814;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.product-details button:hover{
+    background: #f7ca00;
+}

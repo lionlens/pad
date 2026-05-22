@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Order Confirmed</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* box */
+.card{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+/* green circle */
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #28a745;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pop 0.5s ease-in-out;
+}
+
+/* tick */
+.circle span{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* animation */
+@keyframes pop{
+    0%{transform: scale(0);}
+    80%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+h1{
+    margin-top: 20px;
+    color: #28a745;
+}
+
+p{
+    color: #555;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="circle">
+        <span>✓</span>
+    </div>
+
+    <h1>Order Confirmed</h1>
+
+    <p>Your order has been successfully placed.</p>
+
+    <p>We will message you for photo confirmation soon 👍</p>
+
+    <button onclick="window.location.href='index.html'">
+        Continue Shopping
+    </button>
+
+</div>
+
+</body>
+</html>

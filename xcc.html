@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frame Website</title>
+</head>
+
+<body>
+
+<h1>My Frame Website</h1>
+
+<div id="products"></div>
+
+<script>
+
+fetch("https://opensheet.elk.sh/1bJ_D-rfcXMiSet0EXbB9tHyGMjJeIKaY5P6sXwLSLRc/Products")
+.then(res => res.json())
+.then(products => {
+
+    let output = "";
+
+    products.forEach(product => {
+
+        output += `
+        
+        <div style="border:1px solid black;padding:20px;margin:20px;">
+
+            <img src="${product.Image}" width="300">
+
+            <h2>${product.Product}</h2>
+
+            <h3>₹${product.Price}</h3>
+
+            <p>${product.Description}</p>
+
+            <button>Book Now</button>
+
+        </div>
+
+        `;
+    });
+
+    document.getElementById("products").innerHTML = output;
+
+});
+
+</script>
+
+</body>
+</html>
